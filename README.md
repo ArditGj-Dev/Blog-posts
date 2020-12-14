@@ -1,1 +1,2 @@
 # Blog-posts
+It a microservice app. I made a service for every resource in app. So, I have two main service: posts and comments. For posts I have two other service: CreatePosts and ListPosts and for comments too. For every changes that happened in one of our service those service sent an event to event-bus (another service) and event-bus notice other services for changes. In my app services are not depended to each-others. If one of my service is down for some reasons, others are working correctly.
